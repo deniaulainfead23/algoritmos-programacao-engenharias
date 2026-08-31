@@ -1,7 +1,7 @@
 # Lista de exemplos práticos em VisuAlg
 
 Material para copiar, colar e executar no **VisuAlg**.
-
+https://visualg.com.br/ 
 Os exemplos estão organizados em cinco grupos: algoritmos simples, `SE`, `ESCOLHA/CASO`, `PARA` e `ENQUANTO`.
 
 > Sugestão didática: antes de executar, peça aos alunos para preverem a saída do algoritmo.
