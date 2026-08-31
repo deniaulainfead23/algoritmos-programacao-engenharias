@@ -13,12 +13,6 @@ Revisar UA1 a UA13 de forma ativa, com problemas curtos, caça ao erro, teste de
 7. Vetores e matrizes.
 8. Sistemas embarcados.
 
-## Jogo: A fábrica enlouqueceu
-Cada grupo recebe um algoritmo com um erro lógico. Pontos:
-- 1 ponto por localizar o erro;
-- 1 ponto por explicar;
-- 1 ponto por corrigir;
-- 1 ponto por testar.
 
 ## Fechamento
 Cada aluno escreve a técnica que ainda precisa revisar antes da AI.
