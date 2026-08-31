@@ -29,6 +29,46 @@ int main() {
 }
 ```
 
+# ESTAMOS USANDO PONTEIRO NESSE EXEMPLO #
+
+Você está usando ponteiros, sim, mas de forma indireta no scanf.
+
+scanf("%f", &largura);
+
+O operador & obtém o endereço de memória da variável largura. Esse endereço é passado ao scanf, permitindo que ele armazene o valor digitado diretamente na variável.
+
+O mesmo ocorre aqui:
+
+```c
+scanf("%f", &comprimento);
+```
+
+Porém, você não declarou uma variável ponteiro, como neste exemplo:
+```c
+float *ponteiro;
+ponteiro = &largura;
+```
+
+Portanto:
+
+largura, comprimento e area são variáveis comuns do tipo float;
+&largura e &comprimento são endereços de memória;
+scanf recebe esses endereços por meio de ponteiros;
+não existe uma variável ponteiro declarada explicitamente no seu programa.
+
+Uma maneira simples de explicar aos alunos:
+
+O scanf precisa saber não apenas qual é a variável, mas em qual “endereço da memória” deve guardar o valor digitado. O símbolo & fornece esse endereço.
+
+Sem o &:
+
+```c
+scanf("%f", largura); // errado
+```
+
+O programa trataria o conteúdo ainda não inicializado de largura como se fosse um endereço de memória, causando comportamento indefinido — frequentemente erro ou encerramento do programa.
+
+
 ## Exemplo 2 - Potência elétrica
 
 ```c
